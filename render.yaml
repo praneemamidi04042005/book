@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: bookmyappointment-ai
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm ci --prefix server && npm ci --prefix client && npm run build --prefix client
+    startCommand: npm start --prefix server
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: VITE_API_URL
+        value: /api
+      - key: MAX_UPLOAD_MB
+        value: 10
+      - key: JWT_SECRET
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false

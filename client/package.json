@@ -1,0 +1,29 @@
+{
+  "name": "bookmyappointment-ai-client",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "dependencies": {
+    "axios": "1.20.0",
+    "bookmyappointment-ai": "file:..",
+    "lodash-es": "^4.18.1",
+    "lucide-react": "0.468.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router": "6.30.6",
+    "react-router-dom": "6.30.6",
+    "recharts": "2.15.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "4.7.0",
+    "autoprefixer": "10.6.1",
+    "postcss": "8.5.28",
+    "tailwindcss": "3.4.19",
+    "vite": "6.4.3"
+  }
+}
